@@ -1,0 +1,111 @@
+CSS – 
+/* -----------------------------
+   Hero Section & Landing Page
+------------------------------*/
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.hero {
+  position: relative;
+  height: 100vh; /* full screen height */
+  background-color: #f8c8e6; /* soft pink */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* center hero text vertically */
+  align-items: center;     /* center hero text horizontally */
+  overflow: hidden;
+}
+
+/* Top-left logo in the nav */
+.hero > nav > img.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  height: 350px;
+  width: auto;
+  z-index: 2;
+  box-sizing: border-box;
+}
+
+/* Centered logo inside the hero overlay */
+.hero .hero-overlay img.logo {
+  display: block;
+  margin: 0 auto 20px;
+  height: 180px;
+  width: auto;
+  z-index: 1;
+}
+
+/* Centered nav tabs */
+.center-nav {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 40px;
+  z-index: 2;
+}
+
+.center-nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: 'Garamond', 'Times New Roman', serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.center-nav a:hover {
+  color: #bf1e77; /* soft pink hover */
+}
+
+/* Nav links styling for templates */
+.nav-links {
+  display: flex;
+  gap: 40px;
+  position: absolute;
+  top: 100px;
+  right: 40px;
+  z-index: 2;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: 'Garamond', 'Times New Roman', serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.nav-links a:hover {
+  color: #bf1e77;
+}
+
+/* Hero text in the middle */
+.hero-overlay {
+  text-align: center;
+  color: black;
+  z-index: 1;
+  margin-top: 700px;
+}
+
+.hero-overlay h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  font-family: 'Garamond', 'Times New Roman', serif;
+  color: black;
+  letter-spacing: 1px;
+}
+
+.hero-overlay p {
+  font-size: 20px;
+}
+ 
